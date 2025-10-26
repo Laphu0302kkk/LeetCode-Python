@@ -7,12 +7,9 @@ class Solution:
         week=n//7
         dayofweek=n-week*7
 
-        if week==0:
-            totalday= n*(1+n)/2
-            return int (totalday)
-        else:
-            totalweek= (week/2)*(2*28+(week-1)*7)
-            totalday= (dayofweek)*(week+1+week+dayofweek)/2
-            return int (totalweek+totalday)
+      
+        totalweek= (week/2)*(2*28+(week-1)*7)
+        totalday= (dayofweek)*(week+1+week+dayofweek)/2
+        return int (totalweek+totalday)
 
         
